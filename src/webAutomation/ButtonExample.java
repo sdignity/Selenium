@@ -36,8 +36,6 @@ public class ButtonExample {
 		homepageButton.click();
 		
 		
-		
-
 	}
 
 }

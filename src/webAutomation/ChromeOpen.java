@@ -1,6 +1,10 @@
 package webAutomation;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ChromeOpen {
@@ -13,7 +17,11 @@ public class ChromeOpen {
 		
 		driver.get("https://www.google.co.in");
 		
-		driver.quit();
+		
+		WebElement page1=driver.findElement(By.name("q"));
+		page1.sendKeys("Dimple hayathi 4k images"+Keys.ENTER);
+		
+	//	driver.quit();
 		
 
 	}
